@@ -22,6 +22,8 @@ const Home = () => {
 						<div
 							onClick={() => {
 								if (redShine === "") {
+									setYellowShine("");
+									setGreenShine("");
 									setRedShine("shine");
 								} else {
 									setRedShine("");
@@ -32,6 +34,8 @@ const Home = () => {
 							onClick={() => {
 								if (yellowShine === "") {
 									setYellowShine("shine");
+									setGreenShine("");
+									setRedShine("");
 								} else {
 									setYellowShine("");
 								}
@@ -41,6 +45,8 @@ const Home = () => {
 							onClick={() => {
 								if (greenShine === "") {
 									setGreenShine("shine");
+									setYellowShine("");
+									setRedShine("");
 								} else {
 									setGreenShine("");
 								}
